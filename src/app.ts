@@ -1,9 +1,9 @@
-import cors from "cors";
-import express, { json } from "express";
-import "express-async-errors";
-import dotenv from "dotenv";
+import cors from 'cors';
+import express, { json } from 'express';
+import 'express-async-errors';
+import dotenv from 'dotenv';
 
-import router from "./routers/index.js";
+import router from './routers/index.js';
 
 dotenv.config();
 
