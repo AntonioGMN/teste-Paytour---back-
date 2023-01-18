@@ -22,7 +22,7 @@ export default function postCurriculo(req: Request, res: Response) {
       next(err);
     },
     limits: {
-      fileSize: 2 * 1024 * 1024,
+      fileSize: 1024 * 1024,
     },
     fileFilter: (req, file, cb) => {
       const alowedFileTypes = ['.doc', '.docx', '.pdf'];
@@ -42,6 +42,7 @@ export default function postCurriculo(req: Request, res: Response) {
     }
 
     const file = req.file;
+    console.log(req.file);
     res.status(200).send({
       filename: file.filename,
       mimetype: file.mimetype,
