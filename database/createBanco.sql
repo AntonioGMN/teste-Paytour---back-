@@ -6,5 +6,5 @@
     escolaridade TEXT NOT NULL,
     observacoes TEXT NULL,
     arquivo TEXT NOT NULL,
-		dataCriacao TIMESTAMP NOT NULL DEFAULT NOW(),
+		"dataCriacao" TIMESTAMP NOT NULL DEFAULT NOW(),
 	);
