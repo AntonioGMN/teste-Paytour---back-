@@ -17,8 +17,8 @@ const client = new Client(config);
 async function createDatabase() {
   try {
     await client.connect();
-    await client.query('CREATE DATABASE "CurriculoForm"');
-    console.log('DataBase CurriculoForm criada');
+    await client.query(`CREATE DATABASE "${process.env.DB_NAME}"`);
+    console.log(`DataBase ${process.env.DB_NAME} criada`);
   } catch (error) {
     console.error(error.stack);
     return false;
