@@ -10,7 +10,7 @@ async function createTable() {
       escolaridade TEXT NOT NULL,
       observacoes TEXT NULL,
       arquivo TEXT NOT NULL,
-		  "dataCriacao" DATE NOT NULL DEFAULT NOW()
+		  "dataCriacao" TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT NOW()
     );`);
 
     console.log('Table Criada');

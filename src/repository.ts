@@ -22,7 +22,7 @@ export default async function saveForm(
         [nome, email, escolaridade, cargoDesejado, arquivo],
       );
     }
-    return;
+    return true;
   } catch (err) {
     return err.message;
   }

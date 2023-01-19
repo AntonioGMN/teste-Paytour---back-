@@ -18,7 +18,7 @@ async function createDatabase() {
   try {
     await client.connect();
     await client.query('CREATE DATABASE "CurriculoForm"');
-    console.log('DataBase CurriloForm criada');
+    console.log('DataBase CurriculoForm criada');
   } catch (error) {
     console.error(error.stack);
     return false;
