@@ -38,7 +38,8 @@ const uploadFile = upload.single('file');
 function uploadOrThowErro(req, res, next) {
   uploadFile(req, res, function (err) {
     if (err) {
-      return res.status(400).send(err.message);
+      console.log(err);
+      return res.status(400).send(err);
     }
 
     next();
